@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: alegreya, alegreya, alegreya;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #ebba8f;
+  color: #de8c66;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #346d88;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #8dbbb8;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: #A3C8C6;
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>☁CloudSpace☁</h1>
+  <p>The Clouds' landing</p>
+</div>
+
+<div class="navbar">
+  <a href="https://discord.gg/hC2RwyTNuP">Discord</a>
+  <a href="#">Tiktok</a>
+  <a href="#">Tumblr</a>
+  <a href="#" class="right">Youtube</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>🍄About Me🍄</h2>
+    <h5>My Pfp</h5>
+    <img src="https://cdn.discordapp.com/avatars/766143889210867713/5af1b0555dc61d5cdc630c22ea774739.webp?size=1024&width=0&height=256" alt="PFP" height=200>
+    <p><b>Preferred Name:</b> T/Terrence
+    <br><b>Pronouns:</b> He/they/it
+    <br><b>Likes:</b> KNY, MHA, FNAF, Undertale, BSD, VNC, sleeping, theorizing, shipping, animating, worldbuilding, character creation. 
+    <br><b>Dislikes:</b> Homophobes, Pedophiles, rude people, yelling, conflict</p>
+    
+    
+    
+    
+    <h3>Image Gallery</h3>
+    youtube banner<br>
+    cover for my series<br>
+    my main ocs
+    <h3>Q&ampA</h3>
+<button class="collapsible">Questions</button>
+<div class="content">
+  <p><div id="disqus_thread"></div>
+<script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://myinformation-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+
+
+  </div>
+  <div class="main">
+    <h2>Most Recent Video</h2>
+    <h5>Last Updated on Oct 19, 2023</h5>
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=0by-Dj7s95qUGAC0&amp;list=UULFlRC8188Wmgqkk3j3rUbreg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+    <br><br>
+    <h2>World Lore</h2>
+    <h5>Last Updated On Oct 19, 2023</h5>
+    [another html will go here later]
+    <h3>Cosmic Odysseys!</h3>
+    [videos]
+    <h2>Watch Anime!<h2>
+    [html later]
+    </div>
+</div>
+
+
+</body>
+</html>
